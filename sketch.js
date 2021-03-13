@@ -29,7 +29,7 @@ function preload() {
 
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(windowWidth, windowHeight);
 
   // attivazione microfono
   mic = new p5.AudioIn();
@@ -45,6 +45,7 @@ function setup() {
 
 
 function draw() {
+  translate(width/2, height/2);
   background(255); // reactivity
  
 
