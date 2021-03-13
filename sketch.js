@@ -48,7 +48,7 @@ function draw() {
   
   push();
   
-  translate(width/2-250, height/2-250);
+  translate(width/2 - 250, height/2 - 250);
   background(255); // reactivity
  
 
