@@ -45,7 +45,10 @@ function setup() {
 
 
 function draw() {
-  translate(width/2, height/2);
+  
+  push();
+  
+  translate(width/2-250, height/2-250);
   background(255); // reactivity
  
 
@@ -56,7 +59,7 @@ function draw() {
   
 
   // CERCHIO 1
-  let r1_value = map(spectrum[i1], 0, 255, 0, height / 2); // raggio
+  let r1_value = map(spectrum[i1], 0, 255, 0, 250); // raggio
 
   let r1_value_1 = r1_value;
   let r1_value_2 = r1_value_1 - r1;
@@ -71,12 +74,12 @@ function draw() {
   }
   
   noFill();
-  ellipse(203.4723, height / 2, r1, r1);
+  ellipse(203.4723, 250, r1, r1);
   
   
   
   // CERCHIO 2
-  let r2_value = map(spectrum[i2], 0, 255, 0, height / 2); // raggio
+  let r2_value = map(spectrum[i2], 0, 255, 0, 250); // raggio
 
   let r2_value_1 = r2_value;
   let r2_value_2 = r2_value_1 - r2;
@@ -90,13 +93,13 @@ function draw() {
   }
   
   noFill();
-  ellipse(203.4723 + (12.8522 * 1), height / 2, r2, r2);
+  ellipse(203.4723 + (12.8522 * 1), 250, r2, r2);
   
   
   
   
   // CERCHIO 3
-  let r3_value = map(spectrum[i3], 0, 255, 0, height / 2); // raggio
+  let r3_value = map(spectrum[i3], 0, 255, 0, 250); // raggio
 
   let r3_value_1 = r3_value;
   let r3_value_2 = r3_value_1 - r3;
@@ -110,12 +113,12 @@ function draw() {
   }
   
   noFill();
-  ellipse(203.4723 + (12.8522 * 2), height / 2, r3, r3);
+  ellipse(203.4723 + (12.8522 * 2), 250, r3, r3);
   
   
   
   // CERCHIO 4
-  let r4_value = map(spectrum[i4], 0, 255, 0, height / 2); // raggio
+  let r4_value = map(spectrum[i4], 0, 255, 0, 250); // raggio
 
   let r4_value_1 = r4_value;
   let r4_value_2 = r4_value_1 - r4;
@@ -129,13 +132,13 @@ function draw() {
   }
   
   noFill();
-  ellipse(203.4723 + (12.8522 * 3), height / 2, r4, r4);
+  ellipse(203.4723 + (12.8522 * 3), 250, r4, r4);
   
   
   
   
   // CERCHIO 5
-  let r5_value = map(spectrum[i5], 0, 255, 0, height / 2); // raggio
+  let r5_value = map(spectrum[i5], 0, 255, 0, 250); // raggio
 
   let r5_value_1 = r5_value;
   let r5_value_2 = r5_value_1 - r5;
@@ -149,12 +152,17 @@ function draw() {
   }
   
   noFill();
-  ellipse(203.4723 + (12.8522 * 4), height / 2, r5, r5);
+  ellipse(203.4723 + (12.8522 * 4), 250, r5, r5);
  
+  
+  
+pop();
   
   
   
   // LOGOTIPO
+  translate(width/2, height/2);
+  imageMode(CENTER);
   image(img, 0, 0, 500, 500);
 }
 
