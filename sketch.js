@@ -126,7 +126,7 @@ function draw() {
 
   if(r4 <= 5) {
     noStroke();
-  }
+  } 
   else {
    stroke(stroke_color);
   }
