@@ -166,7 +166,9 @@ pop();
   image(img, 0, 0, 500, 500);
 }
 
-
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 
 function touchStarted() {
   getAudioContext().resume();
